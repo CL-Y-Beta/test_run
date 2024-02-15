@@ -1,6 +1,6 @@
 
 'use client'
-
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 function Menu() {
@@ -19,8 +19,8 @@ function Menu() {
 
       <main>
         <h1>Select where you are going to have your workout.</h1>
-        <button onClick={handleHomeClick}>Home</button><br></br>
-        <button onClick={handleGymClick}>Gym</button>
+        <Link href={`/start-workout?data=home`}>Home</Link><br></br>
+        <Link href={`/start-workout?data=the gym`}>Gym</Link><br></br>
       </main>
 
     );

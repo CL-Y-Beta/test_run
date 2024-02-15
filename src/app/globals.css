@@ -18,7 +18,7 @@
 
 body {
   color: #dedded;
-  background: var(--background-start-rgb);
+  background-color: #463eb4;
 }
 
 @layer utilities {
